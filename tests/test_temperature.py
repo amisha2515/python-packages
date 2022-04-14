@@ -1,4 +1,4 @@
-from convrsn.temperature import f2c, c2f
+from conversn.temperature import f2c, c2f
 
 def test_f2c():
     assert f2c(32) == 0.0
