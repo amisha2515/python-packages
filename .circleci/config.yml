@@ -40,17 +40,17 @@ workflows:
   build_test_publish:
     jobs:
       - build_test
-      - test_pypi_publish:
-          requires:
-            - build_test
-          filters:
-            branches:
-              only:
-                - develop
-      - pypi_publish:
-          requires:
-            - build_test
-          filters:
-            branches:
-              only:
-                - main
+      #- test_pypi_publish:
+      #    requires:
+      #      - build_test
+      #    filters:
+      #      branches:
+      #        only:
+      #          - develop
+      #- pypi_publish:
+      #    requires:
+      #      - build_test
+      #    filters:
+      #      branches:
+      #        only:
+      #          - main
